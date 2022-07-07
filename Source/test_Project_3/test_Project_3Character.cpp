@@ -120,7 +120,7 @@ void Atest_Project_3Character::MoveForward(float Value)
 
 		// get forward vector
 		const FVector Direction = FRotationMatrix(YawRotation).GetUnitAxis(EAxis::X);
-		AddMovementInput(Direction, Value*2000);
+		AddMovementInput(Direction, Value);
 	}
 }
 
@@ -135,6 +135,6 @@ void Atest_Project_3Character::MoveRight(float Value)
 		// get right vector 
 		const FVector Direction = FRotationMatrix(YawRotation).GetUnitAxis(EAxis::Y);
 		// add movement in that direction
-		AddMovementInput(Direction, Value*2000);
+		AddMovementInput(Direction, Value);
 	}
 }
